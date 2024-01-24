@@ -1,10 +1,10 @@
-interface Calculator{
-
- add<T>(a:T,b:T):T,
-  Minus<T>(a:T,b:T):T,
-  devide<T>(a:T,b:T):T,
-
-
+interface Calculator {
+add:(a:number,b:number)=>number
 }
 
+const calculator: Calculator = {
+  add: (a, b) => a + b,
 
+};
+
+console.log(calculator.add(2, 4));
